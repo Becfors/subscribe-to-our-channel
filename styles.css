@@ -1,0 +1,85 @@
+/* styles.css */
+#subscribe-link {
+    color: #003C43;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#subscribe-link:hover {
+    color: #003C43;
+}
+
+#subscribe-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+
+.card {
+    background-image: linear-gradient(to right, #003C43 0%, #135D66 100%);
+    /*background-color: #003C43;*/
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #E3FEF7;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFC94A;
+}
+
+.join {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #F1FADA;
+}
+
+.link {
+    background-color: #FFC94A;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #E3FEF7;
+    color: white;
+}
+
+/* Additional Styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+    }
+}

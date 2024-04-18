@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Pop-up</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Local path to your CSS file -->
+
+</head>
+
+<body>
+    <div class="card">
+        <p class="title">Want the best phone?</p>
+        <p class="description">Watch our reviews before buying.</p>
+        <p class="join"> <b>Click on the link</b> to join our channel and stay updated.</p>
+        <div class="link">
+            <a href="#" id="subscribe-link">Click Here</a>
+        </div>
+    </div>
+
+
+    <div id="subscribe-popup">
+        <p>Thank you for subscribing!</p>
+    </div>
+
+    <script>
+        document.getElementById("subscribe-link").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default action of the link
+            // Open the pop-up window
+            window.open("https://www.youtube.com/channel/UCwEqi6xVQdukks7tQjnHgtw?sub_confirmation=1", "SubscribePopup", "width=600,height=400");
+        });
+    </script>
+
+
+
+</body>
+
+</html>
